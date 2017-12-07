@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(../img/dice-wallpaper.jpg) no-repeat 0 0;
+}
+
+.wrapper{
+    background: #f7f7f7;
+    position: relative;
+    max-width: 960px;
+    min-width: 960px;
+    height: 600px;
+    margin: 100px auto 0;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+}
+
+.players-wrapper, .button-wrapper{
+    display: flex;
+    min-height: 100%;
+    order: 1;
+    opacity: 0.9;
+}
+
+.player-score{
+    color: #d61616;
+    font-size: 80px;
+}
+
+.button-wrapper{
+    position: relative;
+    flex-direction: column;
+    order: 0;
+}
+
+.player-1-panel, .player-0-panel{
+    font-weight: 300;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.player-name{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.player-current-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #d61616;
+    margin: 200px auto 0;
+    width: 150px;
+    height: 100px;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.player-current-label{
+    font-size: 20px;
+    color: #000000;
+}
+
+.player-current-score{
+    font-size: 30px;
+    color: #f7f7f7;
+}
+
+button{
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    width: 200px;
+    outline: none;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn-new,.btn-roll,.btn-hold{
+    right: 385px;
+    position: absolute;
+}
+
+.btn-new{
+    top: 50px;
+}
+
+.btn-roll{
+    top: 320px;
+}
+
+.btn-hold{
+    top: 490px;
+}
+
+img{
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    right: 430px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+i{  
+    margin-right: 8px;
+    color: #d61616;
+    font-size: 24px;
+}
+
+.active{
+    font-weight: 400;
+    color: #090909;
+    background-color: #ebebeb;
+}
+
+.winner{
+    color: #d61616;
+    background-color: #ebebeb;
+}
+
+.final-score {
+    position: absolute;
+    right: 405px;
+    top: 100px;
+    color: #555555;
+    font-family: "Lato",sans-serif;
+    text-align: center;
+    font-size: 18px;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.final-score:focus{outline: none;}
